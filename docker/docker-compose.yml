@@ -1,0 +1,60 @@
+version: "2"
+services:
+  fournisseur1:
+    build: ./fournisseur1
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.2
+    restart: always
+
+  fournisseur2:
+    build: ./fournisseur2
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.3
+    restart: always
+
+  fournisseur3:
+    build: ./fournisseur3
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.4
+    restart: always
+
+  fournisseur4:
+    build: ./fournisseur4
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.5
+    restart: always
+
+  go1:
+    build: ./go1
+    ports:
+      - "8082:8082"
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.6
+
+  go2:
+    build: ./go2
+    ports:
+      - "8083:8082"
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.7
+  go3:
+    build: ./go3
+    ports:
+      - "8084:8082"
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.8
+    
+networks:
+  static-network:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+

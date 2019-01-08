@@ -1,0 +1,4 @@
+Poire	4
+Poutine	2
+Pamplemousse	12
+Pasteque	54

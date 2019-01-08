@@ -1,0 +1,4 @@
+Banane	4
+Pomme	2
+Ciseau_en_fraise	12
+Tabarnak	999

@@ -1,0 +1,4 @@
+Biere	4
+Poule	2
+Riz	12
+Couscous_Au_Poisson	54

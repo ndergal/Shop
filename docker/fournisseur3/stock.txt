@@ -1,0 +1,4 @@
+Mouton	4
+Mousse_de_canard	2
+Mangue	12
+Mierda_con_leche	54
